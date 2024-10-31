@@ -71,7 +71,7 @@ const SurahPage = ({ params }) => {
           <h2 className="text-2xl font-bold text-primary mb-4">آيات السورة:</h2>
           <div className="space-y-4">
             {currentVerses.map((verse) => (
-              <p key={verse.number} className="text-text text-xl inline">
+              <p key={verse.number} className="text-text text-xl inline aya">
                 {verse.text.ar}
                 {" , "}
                 {/* <span className="text-gray-500">({verse.text.en})</span> */}

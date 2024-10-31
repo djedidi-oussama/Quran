@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
-  --font-Cairo: "Cairo", serif;
+  --font-cairo: "Cairo", serif;
+  --font-amiri: "Amiri", serif;
   --background: #faf9f6;
   --text: #333333;
   --verse: #004225;
@@ -15,5 +17,9 @@
 }
 
 body {
-  font-family: var(--font-Cairo);
+  font-family: var(--font-cairo);
+}
+
+.aya {
+  font-family: var(--font-amiri);
 }

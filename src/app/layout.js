@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const amiriFont = localFont({
+const cairoFont = localFont({
   src: [
     {
       path: "./fonts/Cairo-Regular.ttf",
@@ -14,7 +14,7 @@ const amiriFont = localFont({
       style: "bold",
     },
   ],
-  variable: "--font-amiri",
+  variable: "--font-cairo",
 });
 
 export const metadata = {
@@ -25,11 +25,12 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${amiriFont.variable} antialiased bg-background text-text`}>{children}</body>
+      <body className={`${cairoFont.variable} antialiased bg-background text-text`}>
+        {children}
+      </body>
     </html>
   );
 }
