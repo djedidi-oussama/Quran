@@ -28,9 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <Head>
-        <meta charSet="UTF-8" />
-      </Head>
+      <head >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charSet="UTF-8" />
+      </head>
       <body
         className={`${cairoFont.variable} antialiased bg-background text-text`}
       >
