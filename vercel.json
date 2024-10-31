@@ -12,11 +12,6 @@
     ],
     "env": {
       "NEXT_PUBLIC_API_URL": "https://quran.i8x.net/"
-    },
-    "functions": {
-      "api/*": {
-        "maxDuration": 10
-      }
     }
   }
   
