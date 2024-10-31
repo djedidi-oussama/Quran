@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "NEXT_PUBLIC_API_URL": "https://quran.i8x.net/"
+    },
+    "functions": {
+      "api/*": {
+        "maxDuration": 10
+      }
+    }
+  }
+  
