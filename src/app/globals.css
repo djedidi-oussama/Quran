@@ -1,21 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-Cairo: "Cairo", serif;
+  --background: #faf9f6;
+  --text: #333333;
+  --verse: #004225;
+  --primary: #006400;
+  --secondary: #d4af37;
+  --hoverGreen: #009973;
+  --cardBg: #efefef;
+  --error: #e57373;
+  --success: #4caf50;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-Cairo);
 }
